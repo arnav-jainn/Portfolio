@@ -1,7 +1,7 @@
 import React from "react";
 import "./Skills.css";
 import google from "../../assets/google.png";
-import mern from "../../assets/mern.png";
+import mern from "../../assets/Mern.png";
 
 import skills from "../../data/skills.json";
 
