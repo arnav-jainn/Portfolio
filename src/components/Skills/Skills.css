@@ -1,0 +1,65 @@
+.title{
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skill-image-container{
+    background-color: transparent;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px; 
+}
+
+.certificate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 17px;
+
+    padding: 20px;
+    background: #DF8908;
+    background: linear-gradient(90deg,#df890880 0%,rgba(25,55,109,0)100%);
+    border-radius: 10px;
+    padding: 24px;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+
+}
+
+.certificate button{
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+
+    &:hover{
+        transform: scale(1.05);
+        background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        
+    }
+}
+
+.certi-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.certi-content h2{
+    font-size: 20px;
+    font-weight: 500;
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

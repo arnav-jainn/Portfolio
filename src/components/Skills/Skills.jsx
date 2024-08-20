@@ -1,25 +1,60 @@
 import React from "react";
 import "./Skills.css";
+import google from "../../assets/google.png";
+import mern from "../../assets/mern.png";
 
 import skills from "../../data/skills.json";
 
 const Skills = () => {
   return (
-    <div>
-      <h2>Skills</h2>
-      <div>
-        <div>
+    <div className="container ml-[10%] mr-[10%] mt-20">
+      <h2 className="title text-3xl font-bold bg-[linear-gradient(270deg,#DF8908_500%,#B415FF_0%)] bg-clip-text">Skills</h2>
+      <div className="content mt-4 flex justify-evenly">
+        <div className="skills flex w-[45%] flex-wrap gap-9">
           {skills.map((skill, id) => {
-            return<div key={id}>
-                <div>
-                    <img src={skill.imageSrc} alt={skill.title} />
+            return (
+              <div key={id} className="skill flex flex-col items-center gap-3">
+                <div className="skill-image-container">
+                  <img
+                    src={skill.imageSrc}
+                    alt={skill.title}
+                    className="w-20"
+                  />
                 </div>
-                <p>{skill.title}</p>
-
-            </div>;
+                <p className="text-2xl font-medium">{skill.title}</p>
+              </div>
+            );
           })}
         </div>
-        <ul></ul>
+        <div className="certificate-container flex w-[45%] flex-col gap-10">
+          <div className="certificate">
+            <img src={google} alt="google" className="h-32" />
+            <div className="certi-content">
+              <h2>Google Cloud Computing</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci ea dolore labore facilis voluptates esse?
+              </p>
+            </div>
+            <button>
+              <a href="">View Certificate</a>
+            </button>
+          </div>
+          <div className="certificate">
+          <img src={mern} alt="google" className="h-28"/>
+            <div className="certi-content">
+              <h2>MERN Stack</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci ea dolore labore facilis voluptates esse?
+              </p>
+            </div>
+
+            <button>
+              <a href="">View Certificate</a>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
