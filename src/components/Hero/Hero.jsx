@@ -10,7 +10,7 @@ const Hero = () => {
         <span className="bg-[linear-gradient(270deg,#DF8908_10%,#B415FF_100%)] bg-clip-text">
           I'm Arnav Jain,
         </span>
-        frontend developer Based in India.
+        Software developer Based in India.
       </h1>
       {/* <p className="w-[50%] text-center text-2xl leading-10">I am a frontend developer from Delhi,India</p> */}
       <div className="hero-action mb-12 flex items-center gap-7 text-2xl font-medium">

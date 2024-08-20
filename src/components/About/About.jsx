@@ -9,13 +9,13 @@ import { FaFigma } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="about mx-40 my-20 flex flex-col items-center justify-center gap-20">
+    <div className="about mx-20 my-20 flex flex-col items-center justify-center gap-10 p-16">
       <div className="about-title relative">
-        <h1 className="px-7 py-0 text-7xl font-semibold">About me</h1>
+        <h1 className="px-7 py-0 text-6xl font-semibold">About me</h1>
         <img
           src={theme_pattern}
           alt=""
-          className="absolute bottom-0 right-0 -z-10"
+          className="absolute bottom-0 right-0 -z-10 h-20"
         />
       </div>
       <div className="about-para flex flex-col gap-5 text-xl font-medium">
@@ -35,7 +35,7 @@ const About = () => {
           <img src={profile} alt="" className="h-[600px] w-[600px] p-10" />
         </div>
         <div className="about-right flex flex-col gap-20 justify-center">
-          <ul className="about-items flex flex-col gap-12">
+          <ul className="about-items flex flex-col gap-10">
             <li className="about-item">
               <FaArrowPointer className="text-5xl bg-[linear-gradient(270deg,#DF8908_10%,#B415FF_100%)] bg-clip-text" />
               <div className="about-item-text">

@@ -9,7 +9,7 @@ const Navbar = () => {
       <ul className="nav-menu flex items-center gap-[60px] text-xl">
         <li>Home</li>
         <li>About Me</li>
-        <li>Services</li>
+        <li>Skills</li>
         <li>Portfolio</li>
         <li>Contact</li>
       </ul>
