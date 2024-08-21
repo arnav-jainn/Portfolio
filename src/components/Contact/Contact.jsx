@@ -3,10 +3,13 @@ import "./Contact.css";
 import mail from "../../assets/mail_icon.svg";
 import location from "../../assets/location_icon.svg";
 import call from "../../assets/call_icon.svg";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
+import { SiLeetcode } from "react-icons/si";
 
 const Contact = () => {
-
-
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -15,7 +18,7 @@ const Contact = () => {
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formData
+      body: formData,
     });
 
     const data = await response.json();
@@ -27,7 +30,7 @@ const Contact = () => {
       console.log("Error", data);
       setResult(data.message);
     }
-  };  
+  };
 
   return (
     <div
@@ -38,27 +41,48 @@ const Contact = () => {
         <h1 className="text-5xl font-semibold">Get in touch</h1>
       </div>
       <div className="contact-section flex justify-between gap-36">
-        <div className="contact-left flex flex-col gap-8">
-          <h1 className="bg-[linear-gradient(270deg,#DF8908_80%,#B415FF_100%)] text-4xl font-semibold">
-            Let's talk
-          </h1>
-          <p>
-            I'm currently working on new projects, feel free to ask anything and
-            contact anytime.😄
-          </p>
-          <div className="contact-details text-#D8D8D8 flex flex-col gap-8 text-xl">
-            <div className="contact-detail">
-              <img src={mail} alt="" />
-              <p>arnavjainn02@gmail.com</p>
+        <div className="contact-left flex flex-col">
+          <div className="flex flex-col gap-8">
+            <h1 className="bg-[linear-gradient(270deg,#DF8908_80%,#B415FF_100%)] text-4xl font-semibold">
+              Let's talk
+            </h1>
+            <p>
+              I'm currently working on new projects, feel free to ask anything
+              and contact anytime.😄
+            </p>
+            <div className="contact-details text-#D8D8D8 flex flex-col gap-8 text-xl">
+              <div className="contact-detail">
+                <a href="mailto:arnavjainn02@gmail.com" className="flex gap-4">
+                  <img src={mail} alt="Email icon" />
+                  <p>arnavjainn02@gmail.com</p>
+                </a>
+              </div>
+              <div className="contact-detail">
+                <a href="tel:+919717486583" className="flex gap-4">
+                  <img src={call} alt="Call icon" />
+                  <p>+91 9717486583</p>
+                </a>
+              </div>
+              <div className="contact-detail">
+                <img src={location} alt="" />
+                <p>Delhi, India</p>
+              </div>
             </div>
-            <div className="contact-detail">
-              <img src={call} alt="" />
-              <p>+91 9717486583</p>
-            </div>
-            <div className="contact-detail">
-              <img src={location} alt="" />
-              <p>Delhi, India</p>
-            </div>
+          </div>
+
+          <div className="contact-links flex h-[100%] items-center justify-center gap-8">
+            <a href="https://github.com/arnav-jainn">
+              <FaGithub className="connect-icons" />
+            </a>
+            <a href="www.linkedin.com/in/arnavjainn02">
+              <FaLinkedin className="connect-icons" />
+            </a>
+            <a href="https://x.com/Arnav_jainnn">
+              <FaXTwitter className="connect-icons" />
+            </a>
+            <a href="https://leetcode.com/u/arnavjainn02/">
+              <SiLeetcode className="connect-icons" />
+            </a>
           </div>
         </div>
         <form

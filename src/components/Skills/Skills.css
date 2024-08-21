@@ -63,3 +63,11 @@
     background-clip: text;
     color: transparent;
 }
+
+.skill:hover{
+    background: #DF8908;
+    background: linear-gradient(180deg,#df890880 0%,rgba(25,55,109,0)100%);  
+    border-radius: 10px;  
+
+    
+}

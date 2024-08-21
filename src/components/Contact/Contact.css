@@ -61,3 +61,13 @@
         transition: 0.3s;
     }
 }
+
+.connect-icons{
+    font-size: 3rem;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(223, 137, 8, 0.3), 0 4px 12px rgba(180, 21, 255, 0.3);
+    }
+}
