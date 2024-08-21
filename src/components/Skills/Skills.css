@@ -65,8 +65,9 @@
 }
 
 .skill:hover{
-    background: #DF8908;
-    background: linear-gradient(180deg,#df890880 0%,rgba(25,55,109,0)100%);  
+    /* background: #DF8908;
+    background: linear-gradient(180deg,#df890880 0%,rgba(25,55,109,0)100%);   */
+    box-shadow: 0 4px 8px rgba(223, 137, 8, 0.3), 0 14px 12px rgba(180, 21, 255, 0.3);
     border-radius: 10px;  
 
     
