@@ -5,9 +5,9 @@ import mywork_data from "../../assets/mywork_data";
 
 const Projects = () => {
   return (
-    <div className="myWork mx-40 my-32 flex flex-col items-center justify-center gap-20  " id="projects">
+    <div className="myWork mx-40 mb-32 flex flex-col items-center justify-center gap-20  h-screen" id="projects">
       <div className="myWork-title relative">
-        <h1 className="px-7 py-0 text-5xl font-semibold">My Latest Work</h1>
+        <h1 className="px-7  text-5xl font-semibold">My Latest Work</h1>
         <img
           src={theme_pattern}
           alt=""
@@ -24,9 +24,12 @@ const Projects = () => {
                 alt=""
                 className=" cursor-pointer rounded-xl ease-in-out"
               />
+              <div>{work.w_name}</div>
               <div className="flex justify-evenly">
-              <button className="btn">Code</button>
-              <button className="btn">Website</button>
+                <a href={work.code_url} target="_blank"><button className="btn">Code</button></a>
+                <a href={work.website_url} target="_blank"><button className="btn">Website</button></a>
+              
+              
               </div>
             </div>
           );

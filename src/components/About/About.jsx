@@ -9,7 +9,7 @@ import { FaFigma } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="about mx-20 flex flex-col items-center justify-center gap-5 px-16" id="about">
+    <div className="about mx-20 flex flex-col items-center justify-center gap-5 px-16 h-screen"  id="about">
       <div className="about-title relative">
         <h1 className="px-7 py-0 text-6xl font-semibold">About me</h1>
         <img

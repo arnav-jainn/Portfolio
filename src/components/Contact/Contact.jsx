@@ -6,7 +6,7 @@ import call from "../../assets/call_icon.svg";
 
 const Contact = () => {
   return (
-    <div className="contact flex flex-col items-center justify-center gap-16 mx-20 pb-24 -mt-15 " id="contact">
+    <div className="contact flex flex-col items-center justify-center gap-16 mx-20 py-16 -mt-15 h-screen" id="contact">
       <div className="contact-title">
         <h1 className="text-5xl font-semibold ">Get in touch</h1>
       </div>

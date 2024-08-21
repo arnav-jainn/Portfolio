@@ -3,12 +3,15 @@ import "./Skills.css";
 import google from "../../assets/google.png";
 import mern from "../../assets/Mern.png";
 
+
 import skills from "../../data/skills.json";
 
 const Skills = () => {
   return (
-    <div className="container ml-[10%] mr-[10%] my-32 m-28" id="skills">
-      <h2 className="title text-3xl font-bold bg-[linear-gradient(270deg,#DF8908_500%,#B415FF_0%)] bg-clip-text">Skills</h2>
+    <div className="container ml-[10%] mr-[10%] mt-24 h-screen" id="skills">
+      <h2 className="title bg-[linear-gradient(270deg,#DF8908_500%,#B415FF_0%)] bg-clip-text text-3xl font-bold">
+        Skills
+      </h2>
       <div className="content mt-4 flex justify-evenly">
         <div className="skills flex w-[45%] flex-wrap gap-9">
           {skills.map((skill, id) => {
@@ -37,11 +40,13 @@ const Skills = () => {
               </p>
             </div>
             <button>
-              <a href="">View Certificate</a>
+              <a href="/googleCertifiate.pdf" target="_blank">
+                View Certificate
+              </a>
             </button>
           </div>
           <div className="certificate">
-          <img src={mern} alt="google" className="h-28"/>
+            <img src={mern} alt="google" className="h-28" />
             <div className="certi-content">
               <h2>MERN Stack</h2>
               <p>
@@ -51,7 +56,9 @@ const Skills = () => {
             </div>
 
             <button>
-              <a href="">View Certificate</a>
+              <a href="/MERNcertificate.pdf" target="_blank">
+                View Certificate
+              </a>
             </button>
           </div>
         </div>
