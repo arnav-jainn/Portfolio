@@ -6,11 +6,11 @@ import call from "../../assets/call_icon.svg";
 
 const Contact = () => {
   return (
-    <div className="contact flex flex-col items-center justify-center gap-20 my-20 mx-40">
+    <div className="contact flex flex-col items-center justify-center gap-16 mx-20 pb-24 -mt-15 " id="contact">
       <div className="contact-title">
         <h1 className="text-5xl font-semibold ">Get in touch</h1>
       </div>
-      <div className="contact-section flex gap-36">
+      <div className="contact-section flex justify-between gap-36">
         <div className="contact-left flex flex-col gap-8">
           <h1 className="text-4xl font-semibold bg-[linear-gradient(270deg,#DF8908_80%,#B415FF_100%)] ">Let's talk</h1>
           <p>
@@ -32,7 +32,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <form className="contact-right flex flex-col items-start gap-7">
+        <form className="contact-right flex flex-col items-start gap-5">
             <label htmlFor="name">Your Name</label>
             <input type="text" placeholder="Enter Your Name" name="name" />
 
@@ -40,7 +40,7 @@ const Contact = () => {
             <input type="email" placeholder="Enter your Email" name="email" />
 
             <label htmlFor="msg">Write your message</label>
-            <textarea name="msg" rows='8' placeholder="Enter your Message"></textarea>
+            <textarea name="msg" rows='5' placeholder="Enter your Message"></textarea>
 
             <button type="submit" className="contact-submit">Submit Now</button>
 

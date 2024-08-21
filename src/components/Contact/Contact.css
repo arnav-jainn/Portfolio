@@ -25,7 +25,7 @@
 .contact-right input{
     border: none;
     width: 700px;
-    height: 78px;
+    height: 70px;
     padding-left: 20px;
     border-radius: 4px;
     background: #32323c;
@@ -36,7 +36,7 @@
 
 .contact-right textarea{
     border: none;
-    width: 650px;
+    width: 700px;
     padding: 25px;
     border-radius: 4px;
     background: #32323c;
@@ -51,7 +51,7 @@
     border-radius: 50px;
     background: linear-gradient(264deg,#DF8908 -5.09%, #B415FF 106.28%);
     font-size: 22px;
-    padding: 20px 50px;
+    padding: 15px 50px;
     margin-bottom: 50px;
     cursor: pointer;
     transition: 0.3s;

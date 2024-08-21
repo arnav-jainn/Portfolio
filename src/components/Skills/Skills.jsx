@@ -7,7 +7,7 @@ import skills from "../../data/skills.json";
 
 const Skills = () => {
   return (
-    <div className="container ml-[10%] mr-[10%] mt-20">
+    <div className="container ml-[10%] mr-[10%] my-32 m-28" id="skills">
       <h2 className="title text-3xl font-bold bg-[linear-gradient(270deg,#DF8908_500%,#B415FF_0%)] bg-clip-text">Skills</h2>
       <div className="content mt-4 flex justify-evenly">
         <div className="skills flex w-[45%] flex-wrap gap-9">
