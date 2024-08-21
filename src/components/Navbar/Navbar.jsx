@@ -7,7 +7,6 @@ const Navbar = () => {
   const [menu, setMenu] = useState("home");
 
   return (
-    <>
       <div className="navbar mx-[170px] my-[20px] flex items-center justify-between">
         <img src="./logo.png" alt="Arnav jain" className="w-20" />
 
@@ -50,7 +49,6 @@ const Navbar = () => {
           </AnchorLink>
         </div>
       </div>
-    </>
   );
 };
 
