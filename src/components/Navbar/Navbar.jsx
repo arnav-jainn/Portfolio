@@ -7,7 +7,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState("home");
 
   return (
-      <div className="navbar mx-[170px] my-[20px] flex items-center justify-between">
+      <div className="navbar flex items-center justify-evenly pt-5">
         <img src="./logo.png" alt="Arnav jain" className="w-20" />
 
         <ul className="nav-menu flex items-center gap-[60px] text-xl">

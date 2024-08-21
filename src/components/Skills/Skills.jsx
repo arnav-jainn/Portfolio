@@ -8,7 +8,7 @@ import skills from "../../data/skills.json";
 
 const Skills = () => {
   return (
-    <div className="container ml-[10%] mr-[10%] mt-24 h-screen" id="skills">
+    <div className="container ml-[8%] mt-24 h-screen w-screen  " id="skills">
       <h2 className="title bg-[linear-gradient(270deg,#DF8908_500%,#B415FF_0%)] bg-clip-text text-3xl font-bold">
         Skills
       </h2>
