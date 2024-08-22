@@ -32,7 +32,7 @@ const About = () => {
           </div>
       <div className="about-sections flex gap-20">
         <div className="about-left">
-          <img src={profile} alt="" className="h-[600px] w-[600px] p-10" />
+          <img src={profile} alt="" className="h-[600px] w-[500px] p-10" />
         </div>
         <div className="about-right flex flex-col gap-20 justify-center">
           <ul className="about-items flex flex-col gap-10">

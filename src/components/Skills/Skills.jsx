@@ -3,17 +3,16 @@ import "./Skills.css";
 import google from "../../assets/google.png";
 import mern from "../../assets/Mern.png";
 
-
 import skills from "../../data/skills.json";
 
 const Skills = () => {
   return (
-    <div className="container ml-[8%] mt-24 h-screen w-screen  " id="skills">
+    <div className="container ml-[3%] mt-24 h-screen w-screen" id="skills">
       <h2 className="title bg-[linear-gradient(270deg,#DF8908_500%,#B415FF_0%)] bg-clip-text text-3xl font-bold">
         Skills
       </h2>
       <div className="content mt-4 flex justify-evenly">
-        <div className="skills flex w-[45%] flex-wrap gap-9">
+        <div className="skills flex w-[35%] flex-wrap gap-9 pl-[3%]">
           {skills.map((skill, id) => {
             return (
               <div key={id} className="skill flex flex-col items-center gap-3">
@@ -35,8 +34,10 @@ const Skills = () => {
             <div className="certi-content">
               <h2>Google Cloud Computing</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci ea dolore labore facilis voluptates esse?
+                Certified in Google Cloud Computing Foundations, with a solid
+                grasp of GCP services and cloud basics. Skilled in applying
+                foundational cloud tools to create efficient and secure
+                solutions.
               </p>
             </div>
             <button>
@@ -50,8 +51,10 @@ const Skills = () => {
             <div className="certi-content">
               <h2>MERN Stack</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci ea dolore labore facilis voluptates esse?
+                Certified in the MERN stack, skilled in building full-stack web
+                applications using MongoDB, Express.js, React, and Node.js.
+                Proficient in creating responsive UIs and efficient server-side
+                logic.
               </p>
             </div>
 

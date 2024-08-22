@@ -5,7 +5,7 @@ import mywork_data from "../../assets/mywork_data";
 
 const Projects = () => {
   return (
-    <div className="myWork mx-40 mb-32 flex flex-col items-center justify-center gap-20  h-screen" id="projects">
+    <div className="myWork mx-40 mb-32 flex flex-col items-center justify-start gap-20  h-screen " id="projects">
       <div className="myWork-title relative">
         <h1 className="px-7  text-5xl font-semibold">My Latest Work</h1>
         <img

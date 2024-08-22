@@ -16,8 +16,8 @@
       "imageSrc": "/skills/node.png"
     },
     {
-      "title": "GraphQL",
-      "imageSrc": "/skills/graphql.png"
+      "title": "Express",
+      "imageSrc": "/skills/express.png"
     },
     {
       "title": "MongoDB",
@@ -26,5 +26,9 @@
     {
       "title": "Figma",
       "imageSrc": "/skills/figma.png"
+    },
+    {
+      "title": "C++",
+      "imageSrc": "/skills/C++.png"
     }
   ]

@@ -11,7 +11,7 @@ const Hero = () => {
 
   return (
     <div
-      className="hero mb-28 flex h-screen flex-col items-center gap-9"
+      className="hero h-screen mt-20 flex flex-col items-center gap-9  "
       id="home"
     >
       <img src={profile} alt="pic" className="img mt-24 max-h-64" />
